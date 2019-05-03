@@ -23,6 +23,7 @@ INTERIM_DIR = 'interim/'
 FEATURES_BASE_DIR = 'features_base/'
 FEATURES_BASE_DENOISE_DIR = 'features_base_denoise/'
 FEATURES_TSFRESH_DIR = 'features_tsfresh/'
+FEATURES_FOLDS_DENOISE_DIR = 'features_folds_denoise/'
 SEGMENTS_DIR = 'segments/'
 
 SEGMENT_FILENAME = 'seg_{id}.csv'
@@ -31,6 +32,7 @@ FEATURE_FILENAME = 'feature_{id}.csv'
 FEATURES_BASE_FILENAME = 'features_base.csv'
 FEATURES_BASE_DENOISE_FILENAME = 'features_base_denoise.csv'
 FEATURES_TSFRESH_FILENAME = 'features_tsfresh.csv'
+FEATURES_FOLDS_DENOISE_FILENAME = 'features_folds_denoise.csv'
 
 ROWS_PER_SEGMENT = 150000
 
@@ -42,6 +44,9 @@ INTERIM_TRAIN_TYPES = {
 INTERIM_TEST_TYPES = {
     'x': np.int16,
 }
+
+# FOLDS_DENOISE features
+SERIES_FOLDS = 10
 
 ## PROCESSED DATA
 PROCESSED_DIR = 'processed/'

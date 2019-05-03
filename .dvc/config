@@ -1,0 +1,4 @@
+['remote "lanl-earth"']
+url = /media/aavdeev/DATA/.DVC_STORAGE/lanl_earth
+[core]
+remote = lanl-earth

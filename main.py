@@ -19,31 +19,31 @@ log = logging.getLogger(__name__)
 
 def build_features(is_test: bool) -> None:
     print('build_features')
-    print('build_features.base')
-    extract_features(FEATURES_BASE_DIR, Base.features, is_test)
+    # print('build_features.base')
+    # extract_features(FEATURES_BASE_DIR, Base.features, is_test)
 
-    print('build_features.base_denoise')
-    extract_features(FEATURES_BASE_DENOISE_DIR, BaseDenoise.features, is_test)
+    # print('build_features.base_denoise')
+    # extract_features(FEATURES_BASE_DENOISE_DIR, BaseDenoise.features, is_test)
 
-    print('build_features.folds_denoise')
-    extract_features(FEATURES_FOLDS_DENOISE_DIR, FoldsDenoise.features, is_test)
+    # print('build_features.folds_denoise')
+    # extract_features(FEATURES_FOLDS_DENOISE_DIR, FoldsDenoise.features, is_test)
 
-    print('build_features.signal')
-    extract_features(FEATURES_SIGNAL_DIR, Signal.features, is_test)
+    # print('build_features.signal')
+    # extract_features(FEATURES_SIGNAL_DIR, Signal.features, is_test)
 
-    print('build_features.wavelet')
+    # print('build_features.wavelet')
     extract_features(FEATURES_WAVELET_DIR, Wavelet.features, is_test)
 
     print('build_features.tsfresh')
     extract_features(FEATURES_TSFRESH_DIR, Tsfresh.features, is_test)
 
     print('reduce_features')
-    reduce_features(FEATURES_BASE_DIR, FEATURES_BASE_FILENAME, is_test)
-    reduce_features(FEATURES_BASE_DENOISE_DIR, FEATURES_BASE_DENOISE_FILENAME, is_test)
-    reduce_features(FEATURES_FOLDS_DENOISE_DIR, FEATURES_FOLDS_DENOISE_FILENAME, is_test)
-    reduce_features(FEATURES_SIGNAL_DIR, FEATURES_SIGNAL_FILENAME, is_test)
-    reduce_features(FEATURES_WAVELET_DIR, FEATURES_WAVELET_FILENAME, is_test)
-    reduce_features(FEATURES_TSFRESH_DIR, FEATURES_TSFRESH_FILENAME, is_test)
+    # reduce_features(FEATURES_BASE_DIR, FEATURES_BASE_FILENAME, is_test)
+    # reduce_features(FEATURES_BASE_DENOISE_DIR, FEATURES_BASE_DENOISE_FILENAME, is_test)
+    # reduce_features(FEATURES_FOLDS_DENOISE_DIR, FEATURES_FOLDS_DENOISE_FILENAME, is_test)
+    # reduce_features(FEATURES_SIGNAL_DIR, FEATURES_SIGNAL_FILENAME, is_test)
+    # reduce_features(FEATURES_WAVELET_DIR, FEATURES_WAVELET_FILENAME, is_test)
+    # reduce_features(FEATURES_TSFRESH_DIR, FEATURES_TSFRESH_FILENAME, is_test)
 
 
 def main():
@@ -68,10 +68,10 @@ def main():
     # is_test = False
     # build_features(is_test)
 
-    # smaller train chunks size
-    split_raw_train(segment_size=ROWS_PER_SEGMENT,
-                    segment_id_prefix=STANDARD_ROWS_SEGMENT_ID_PREFIX,
-                    segments_count=STANDARD_ROWS_COUNT)
+    # random standard train chunks size
+    # split_raw_train(segment_size=ROWS_PER_SEGMENT,
+    #                 segment_id_prefix=STANDARD_ROWS_SEGMENT_ID_PREFIX,
+    #                 segments_count=STANDARD_ROWS_COUNT)
 
     # TRAIN from standard random segments
     is_test = False

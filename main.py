@@ -51,29 +51,29 @@ def main():
     # split_raw_train()
     # prepare_raw_test()
 
-    # TRAIN
-    # is_test = False
+    # train
+    # is_test = false
     # build_features(is_test)
 
-    # TEST
-    # is_test = True
+    # test
+    # is_test = true
     # build_features(is_test)
 
     # smaller train chunks size
-    # split_raw_train(segment_size=SMALL_ROWS_PER_SEGMENT,
-    #                 segment_id_prefix=SMALL_ROWS_SEGMENT_ID_PREFIX,
-    #                 segments_count=SMALL_ROWS_COUNT)
+    # split_raw_train(segment_size=small_rows_per_segment,
+    #                 segment_id_prefix=small_rows_segment_id_prefix,
+    #                 segments_count=small_rows_count)
 
-    # TRAIN from small segments
-    # is_test = False
+    # train from small segments
+    # is_test = false
     # build_features(is_test)
 
     # random standard train chunks size
-    # split_raw_train(segment_size=ROWS_PER_SEGMENT,
-    #                 segment_id_prefix=STANDARD_ROWS_SEGMENT_ID_PREFIX,
-    #                 segments_count=STANDARD_ROWS_COUNT)
+    # split_raw_train(segment_size=rows_per_segment,
+    #                 segment_id_prefix=standard_rows_segment_id_prefix,
+    #                 segments_count=standard_rows_count)
 
-    # TRAIN from standard random segments
+    # train from standard random segments
     is_test = False
     build_features(is_test)
 

@@ -1,5 +1,4 @@
 .idea
 .dvc
-data
 .ipynb_checkpoints
-dev
+dev/

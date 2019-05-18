@@ -1,0 +1,8 @@
+md5: c3bc6e3893faaaca00b577a670ce3384
+outs:
+- cache: true
+  md5: 45327f54c6e08564aac5625253b85a20.dir
+  metric: false
+  path: data/interim/test
+  persist: false
+wdir: ../..

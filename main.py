@@ -32,18 +32,18 @@ def build_features(is_test: bool) -> None:
     # extract_features(FEATURES_SIGNAL_DIR, Signal.features, is_test)
 
     # print('build_features.wavelet')
-    extract_features(FEATURES_WAVELET_DIR, Wavelet.features, is_test)
+    # extract_features(FEATURES_WAVELET_DIR, Wavelet.features, is_test)
 
-    print('build_features.tsfresh')
-    extract_features(FEATURES_TSFRESH_DIR, Tsfresh.features, is_test)
+    # print('build_features.tsfresh')
+    # extract_features(FEATURES_TSFRESH_DIR, Tsfresh.features, is_test)
 
     print('reduce_features')
-    # reduce_features(FEATURES_BASE_DIR, FEATURES_BASE_FILENAME, is_test)
-    # reduce_features(FEATURES_BASE_DENOISE_DIR, FEATURES_BASE_DENOISE_FILENAME, is_test)
-    # reduce_features(FEATURES_FOLDS_DENOISE_DIR, FEATURES_FOLDS_DENOISE_FILENAME, is_test)
-    # reduce_features(FEATURES_SIGNAL_DIR, FEATURES_SIGNAL_FILENAME, is_test)
-    # reduce_features(FEATURES_WAVELET_DIR, FEATURES_WAVELET_FILENAME, is_test)
-    # reduce_features(FEATURES_TSFRESH_DIR, FEATURES_TSFRESH_FILENAME, is_test)
+    reduce_features(FEATURES_BASE_DIR, FEATURES_BASE_FILENAME, is_test)
+    reduce_features(FEATURES_BASE_DENOISE_DIR, FEATURES_BASE_DENOISE_FILENAME, is_test)
+    reduce_features(FEATURES_FOLDS_DENOISE_DIR, FEATURES_FOLDS_DENOISE_FILENAME, is_test)
+    reduce_features(FEATURES_SIGNAL_DIR, FEATURES_SIGNAL_FILENAME, is_test)
+    reduce_features(FEATURES_WAVELET_DIR, FEATURES_WAVELET_FILENAME, is_test)
+    reduce_features(FEATURES_TSFRESH_DIR, FEATURES_TSFRESH_FILENAME, is_test)
 
 
 def main():

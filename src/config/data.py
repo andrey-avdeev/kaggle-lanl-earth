@@ -26,6 +26,7 @@ FEATURES_TSFRESH_DIR = 'features_tsfresh/'
 FEATURES_FOLDS_DENOISE_DIR = 'features_folds_denoise/'
 FEATURES_SIGNAL_DIR = 'features_signal/'
 FEATURES_WAVELET_DIR = 'features_wavelet/'
+FEATURES_ARTGOR_DIR = 'features_artgor/'
 
 SEGMENTS_DIR = 'segments/'
 
@@ -38,6 +39,7 @@ FEATURES_TSFRESH_FILENAME = 'features_tsfresh.csv'
 FEATURES_FOLDS_DENOISE_FILENAME = 'features_folds_denoise.csv'
 FEATURES_SIGNAL_FILENAME = 'features_signal.csv'
 FEATURES_WAVELET_FILENAME = 'features_wavelet.csv'
+FEATURES_ARTGOR_FILENAME = 'features_artgor.csv'
 
 ROWS_PER_SEGMENT = 150000
 
